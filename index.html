@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - BUT Informatique</title>
+  <meta name="description" content="Portfolio personnel d'un étudiant en BUT Informatique à l'IUT de Villetaneuse. Parcours, compétences, stage et objectifs.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== MENU DE NAVIGATION (en haut, fixe) ===== -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#accueil" class="nav__logo">
+        <span class="nav__logo-mark">⚡</span>
+        <span class="nav__logo-text">PORTFOLIO</span>
+      </a>
+
+      <button class="nav__burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__list" id="navList">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#stage">Stage</a></li>
+        <li><a href="#objectifs">Objectifs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== ACCUEIL / HERO ===== -->
+    <section id="accueil" class="hero">
+      <!-- lignes de vitesse façon manga -->
+      <div class="speed-lines" aria-hidden="true"></div>
+      <!-- aura d'énergie -->
+      <div class="aura" aria-hidden="true"></div>
+
+      <div class="hero__content reveal">
+        <p class="hero__hello">Portfolio de</p>
+        <h1 class="hero__name">Kadir CASSEL</h1>
+        <p class="hero__role">Étudiant en <strong>2ème année de BUT en Informatique</strong> - IUT de Villetaneuse</p>
+        <p class="hero__tagline">
+          Passionné de Développement, de Volley-Ball et de l'univers de <em>Dragon Ball Z</em> &amp; de <em>Haikyuu!!</em>, 
+          je code avec la même énergie que je mets sur le terrain.
+        </p>
+        <div class="hero__actions">
+          <a href="#apropos" class="btn btn--gold">Découvrir mon parcours</a>
+          <a href="#contact" class="btn btn--ghost">Me contacter</a>
+        </div>
+      </div>
+
+      <a href="#apropos" class="scroll-hint" aria-label="Descendre">▼</a>
+    </section>
+
+    <!-- Présentation Personnelle -->
+    <section id="apropos" class="section">
+      <div class="container">
+        <h2 class="section__title reveal"> À propos de Moi</h2>
+
+        <p class="lead reveal">
+          Je suis <strong>Kadir CASSEL</strong>, étudiant en deuxième année de B.U.T (Bachelor Universitaire
+          de Technologie) en Informatique à l'IUT de Villetaneuse, Université Sorbonne Paris Nord.
+        </p>
+
+        <div class="about reveal">
+          <article class="card">
+            <h3>La logique de mon parcours</h3>
+            <p>
+              Mon parcours m'a permis de développer des compétences en logique, en analyse
+              et en résolution de problèmes. Les différents projets que j'ai réalisés, qu'ils
+              soient académiques ou personnels, m'ont permis de renforcer mes compétences en
+              programmation et en optimisation de programmes.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Pourquoi l'informatique&nbsp;? Mon choix d'orientation</h3>
+            <p>
+              Je suis passionné par l'informatique, en particulier par l'<strong>Intelligence
+              Artificielle</strong> et la <strong>Cybersécurité</strong>. J'ai pour objectif
+              d'évoluer dans la cybersécurité, le développement logiciel ou l'IA. J'aimerais
+              par exemple contribuer à la conception d'un logiciel capable de sécuriser les
+              données des utilisateurs à l'aide de l'IA.
+            </p>
+          </article>
+        </div>
+
+        <article class="card card--highlight reveal">
+          <h3>Mon projet professionnel : Développeur IA</h3>
+          <p>
+            Le développeur IA conçoit des applications et des solutions d'intelligence
+            artificielle à l'aide de langages comme Python, R ou Java&nbsp;: recommandations
+            sur les plateformes de streaming, assistants virtuels, voitures autonomes… Au-delà
+            de sa spécialisation, il suit les mêmes étapes que tout développeur (analyse des
+            besoins, conception, tests, déploiement et maintenance) et mobilise de réelles
+            qualités relationnelles, car il échange régulièrement avec des équipes
+            pluridisciplinaires.
+          </p>
+          <p>
+            C'est pourquoi je vise une <strong>école d'ingénierie en alternance</strong>
+            spécialisée dans l'IA, ou encore l'<strong>école 2600</strong>,
+            une école immersive centrée sur la cybersécurité afin d'apprendre directement
+            auprès d'experts du domaine.
+          </p>
+        </article>
+
+        <h3 class="subtitle reveal">Mes Qualités Personnelles</h3>
+        <ul class="qualities">
+          <li class="quality reveal">
+            <span class="quality__icon">🏐</span>
+            <h4>Esprit d'équipe</h4>
+            <p>Le volley-ball m'a appris que chaque point se gagne collectivement.
+            Je l'ai retrouvé dans mes projets en binôme, où la coordination compte
+            autant que le code.</p>
+          </li>
+          <li class="quality reveal">
+            <span class="quality__icon">🔥</span>
+            <h4>Persévérance</h4>
+            <p>Face à un bug, je ne lâche pas&nbsp;: lors de la SAÉ réseau, j'ai résolu
+            seul des problèmes comme le traitement des doublons, jusqu'à obtenir un
+            programme fiable.</p>
+          </li>
+          <li class="quality reveal">
+            <span class="quality__icon">🧩</span>
+            <h4>Rigueur &amp; logique</h4>
+            <p>Tests unitaires, commentaires, docstrings&nbsp;: je soigne la qualité de
+            mon code. Une exigence valorisée dans mes notes de SAÉ (jusqu'à 17,25/20).</p>
+          </li>
+        </ul>
+
+        <article class="card card--highlight reveal">
+          <h3>Mon évolution, du BUT1 au BUT2</h3>
+          <p>
+            Du BUT1 au BUT2, je suis passé de fonctions Python isolées à la contribution
+            à une application web complète, structurée et collaborative (architecture
+            contrôleurs / services / DAO). Mes points forts&nbsp;: la rigueur du code, le
+            travail en autonomie sur des problèmes techniques et la capacité à reprendre
+            et à corriger un projet existant. Pour la suite, je souhaite consolider mes acquis
+            en cybersécurité et en IA, mes 2 domaines favoris.
+          </p>
+          <p>
+            Durant cette année de BUT2, j'ai développé de nombreuses compétences techniques.
+            Je sais désormais développer une application Android à l'aide du logiciel Android Studio,
+            mais également utiliser du NodeJS et du VueJS pour le développement de sites webs. Désormais,
+            je peux également travailler de façon collaborative sur Github. J'utilise des branches afin
+            de ne pas géner le code principal lorsque je travailler pour un projet en équipe. J'ai également
+            développé une façon de coder plutôt éthique en y imbriquant des phases de tests dans mes codes Java.
+            Enfin, j'ai appris à développer des systèmes de vitrualisations, j'ai appris à y configurer des
+            serveurs NFS, VPN et autres.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== COMPÉTENCES / BILAN DES SAÉ ===== -->
+    <section id="competences" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title reveal">Bilan des compétences (SAÉ - BUT1)</h2>
+        <p class="section__intro reveal">
+          Synthèse orientée recruteurs et formations : ce que les SAÉ de ma première année
+          m'ont apporté, illustré par des exemples précis.
+        </p>
+
+        <div class="skills">
+          <article class="skill reveal">
+            <header class="skill__head">
+              <h3>SAÉ Implémentation réseau</h3>
+              <span class="badge">16,60 / 20</span>
+            </header>
+            <p><strong>Le projet :</strong> en binôme, modéliser un réseau social et analyser
+            les relations entre ses membres en Python (nombre d'amis, membres les plus
+            populaires…), en lisant des fichiers CSV transformés en dictionnaires.</p>
+            <p><strong>Mon apport :</strong> fort de la spécialité NSI au lycée, j'ai réalisé
+            la majorité du travail technique&nbsp;: fonctions principales, tests unitaires, et
+            résolution autonome de problèmes comme le traitement des doublons.</p>
+            <p><strong>Acquis :</strong> progression en Python, organisation d'un programme et
+            compréhension du fonctionnement des réseaux sociaux.</p>
+          </article>
+
+          <article class="skill reveal">
+            <header class="skill__head">
+              <h3>SAÉ Comparaison d'algorithmes réseau</h3>
+              <span class="badge">15,00 / 20</span>
+            </header>
+            <p><strong>Le projet :</strong> en binôme, comparer les algorithmes des différents
+            programmes d'un réseau social en Python, sur les mêmes données (relations d'amitié
+            issues de fichiers CSV).</p>
+            <p><strong>Mon apport :</strong> j'ai pris en charge les parties les plus
+            techniques (fonctions, tests de vérification et débogage) en grande autonomie.</p>
+            <p><strong>Acquis :</strong> savoir comparer l'algorithmie de plusieurs programmes
+            et évaluer leur efficacité. Évaluation finale à l'oral (60&nbsp;%).</p>
+          </article>
+
+          <article class="skill reveal">
+            <header class="skill__head">
+              <h3>SAÉ Installation d'un poste</h3>
+              <span class="badge">17,25 / 20</span>
+            </header>
+            <p><strong>Le projet :</strong> projet individuel, installer un système complet
+            sur un PC recyclé à partir d'un disque vide, avec interpréteurs, compilateurs,
+            serveur web et SGBD.</p>
+            <p><strong>Mon apport :</strong> maîtrise de la distribution Ubuntu (Linux) et des
+            commandes système, du partitionnement jusqu'à un environnement de développement
+            fonctionnel.</p>
+            <p><strong>Acquis :</strong> aisance en ligne de commande Linux. Évaluation
+            automatique + QCM (comptant double).</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJETS UNIVERSITAIRES (tableaux de la consigne) ===== -->
+    <section id="projets" class="section">
+      <div class="container">
+        <h2 class="section__title reveal">Projets Universitaires (SAÉ - BUT2)</h2>
+
+        <h3 class="subtitle reveal">Projet Universitaire n°1 - S3 : Supervision d'une Diffusion Musicale</h3>
+        <h4>Objectif(s)</h4>
+        <p class="section__intro reveal">
+          Mettre en place un système de supervision garantissant une <strong>diffusion musicale
+          continue</strong> (musique, publicités, messages urgents) sur plusieurs lecteurs
+          distants&nbsp;: suivi de l'état des lecteurs, synchronisation centralisée des playlists,
+          playlist de secours, historisation des messages diffusés et alertes en cas de problème
+          (lecteur KO, playlist obsolète, absence de diffusion). Développement d'un pilote avec
+          deux lecteurs test, un tableau de bord (état, synchro, « now playing ») et des
+          scénarios de test (coupure réseau, coupure électrique, message urgent, planning des
+          publicités).
+        </p>
+        <div class="table-wrap reveal">
+          <table class="proj-table">
+            <thead>
+              <tr>
+                <th>Tâches accomplies (individuellement)</th>
+                <th>Compétences acquises (techniques / transversales)</th>
+                <th>Preuves de compétences</th>
+                <th>Pistes d'amélioration pour le BUT3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <ul class="cell-list">
+                    <li>Définition des limites fonctionnelles et des jalons (cahier des charges).</li>
+                    <li>Gestion des utilisateurs&nbsp;: création, mise à jour, suppression, et lien utilisateurs / organisations.</li>
+                    <li>Création des lecteurs (<code>add_player</code>, <code>edit_player</code>) et de leurs pages.</li>
+                    <li>Synchronisation des musiques sur les lecteurs distants (script <code>rsync.sh</code>, <code>TimeTableService</code>, <code>PlaylistDAO</code>).</li>
+                    <li>Correction du « ping » des lecteurs pour qu'il fonctionne sur Linux et Windows (<code>SongPlayerService.py</code>).</li>
+                    <li>Gestion des tickets et des messages d'urgence (templates, contrôleurs, logs, filtrage).</li>
+                    <li>Affichage des messages diffusés dans les logs (nouvelle route, <code>LogDAO</code>/<code>LogService</code>, dashboard).</li>
+                    <li>Page « mot de passe oublié » (1re version) et amélioration du CSS (distinction des boutons).</li>
+                    <li>Implémentation du <code>SongPlayer</code> dans l'application web (avec Saif).</li>
+                  </ul>
+                </td>
+                <td>
+                  <strong>Techniques :</strong> Python web, architecture contrôleur / service / DAO,
+                  templates HTML &amp; CSS, scripts Bash (rsync), compatibilité multi-OS, base de données.<br><br>
+                  <strong>Transversales :</strong> reprise et débogage d'un projet existant, rédaction
+                  d'un cahier des charges, travail en équipe, autonomie.
+                </td>
+                <td>
+                  Correction du ping multi-OS dans <code>SongPlayerService.py</code>&nbsp;;
+                  renommage et fiabilisation de <code>deleteObsoletePlaylist()</code>&nbsp;;
+                  ajout des routes de tickets / messages diffusés et des templates associés&nbsp;;
+                  ajustement automatique de la base de données aux nouvelles données.
+                </td>
+                <td>
+                  Finaliser la page « mot de passe oublié » (au-delà de la 1ère version)&nbsp;;
+                  terminer <code>ServiceSongPlayer.py</code> (en cours)&nbsp;; renforcer les tests
+                  des scénarios de panne. <em>(à poursuivre au S4)</em>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="subtitle reveal">Projet Universitaire n°2 - S4 : Amélioration du Projet Universitaire de S3</h3>
+        <h4>Objectif(s)</h4>
+        <p class="section__intro reveal">Faire évoluer <strong>SoundStream</strong>, la reprise du projet de supervision
+            musicale du S3, pour le fiabiliser&nbsp;: sécuriser les accès selon les rôles,
+            renforcer la gestion des utilisateurs et des organisations, et améliorer
+            l'expérience d'utilisation (configuration, logs, réinitialisation de mot de passe).
+        </p>
+        <div class="table-wrap reveal">
+          <table class="proj-table">
+            <thead>
+              <tr>
+                <th>Tâches accomplies (individuellement)</th>
+                <th>Compétences acquises (techniques / transversales)</th>
+                <th>Preuves de compétences</th>
+                <th>Pistes d'amélioration pour le BUT3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <strong>Principales :</strong>
+                  <ul class="cell-list">
+                    <li>Création d'une page de configuration utilisateur (modification du numéro de téléphone, paramètres de session).</li>
+                    <li>Restriction de la suppression aux administrateurs + messages de retour (feedback) à l'utilisateur.</li>
+                    <li>Modification de l'adresse e-mail avec validation et contrôle d'unicité.</li>
+                    <li>Sélecteur de type de logs (filtrage automatique par catégorie).</li>
+                  </ul>
+                  <strong>Secondaires :</strong>
+                  <ul class="cell-list">
+                    <li>Correction de la fonction d'ajout d'utilisateur (validation e-mail, anti-doublons).</li>
+                    <li>Correction de la vue des appareils (modification réservée aux admins, visibilité élargie pour le marketing).</li>
+                    <li>Boutons d'accès rapide aux fournisseurs mail (Gmail, Outlook, Yahoo) après réinitialisation.</li>
+                    <li>Nettoyage de la base de données (suppression du type de log <code>PASSWORD</code>).</li>
+                  </ul>
+                </td>
+                <td>
+                  <strong>Techniques :</strong> développement web en Python (architecture
+                  contrôleur / service / DAO), gestion des droits et des rôles, validation de
+                  données, base de données, et surtout <strong>Git / GitHub</strong> en équipe
+                  (branches, pull requests).<br><br>
+                  <strong>Transversales :</strong> travail collaboratif via le versionnement,
+                  revue de code, communication et reprise d'une base de code existante.
+                </td>
+                <td>
+                  Dépôt GitHub <a href="https://github.com/Hachimohammed/SoundStream" target="_blank" rel="noopener">Hachimohammed/SoundStream</a>,
+                  où mes contributions (utilisateur <code>Abdkdr-tr</code>) sont traçables dans
+                  l'historique des commits et des <em>pull requests</em> (demandes de fusion de mes
+                  branches dans le projet principal)&nbsp;: la demande de fusion (pull request puis merge) n°3 pour le filtrage
+                  des logs, la n°4 pour la suppression réservée aux administrateurs et ses messages
+                  d'erreur, et la n°6 pour la page de configuration utilisateur.
+                </td>
+                <td>
+                  Sécuriser davantage les comptes (hachage des mots de passe, contrôle d'accès
+                  plus fin), ajouter des tests automatisés, et finaliser les fonctionnalités du
+                  S3 restées en cours (page « mot de passe oublié » en y ajoutant l'api messagerie
+                  pour réinitialiser le mot de passe de l'utilisateur, <code>ServiceSongPlayer</code>).
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STAGE BUT 2 ===== -->
+    <section id="stage" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title reveal">Stage de BUT2 &amp; monde professionnel</h2>
+
+        <p class="lead reveal">
+          J'ai réalisé mon stage de 8 semaines (du 26 janvier au 20 mars 2026) au sein du
+          service <strong>support de proximité de FNAC DARTY</strong>, au siège d'Ivry-sur-Seine.
+          Mon rôle était d'aider l'équipe à préparer les équipements des collaborateurs et à
+          régler leurs soucis informatiques, principalement autour du Maintien en Condition
+          Opérationnelle (MCO) du parc informatique.
+        </p>
+
+        <article class="card reveal">
+          <h3>Aperçu des missions</h3>
+          <p>Mes missions se sont organisées autour de quatre axes&nbsp;:</p>
+          <ul class="cell-list">
+            <li><strong>Réparation et reconditionnement</strong>&nbsp;: diagnostic de l'état
+            de santé (SOH) des batteries via PowerShell, remplacement de composants critiques
+            (écrans, SSD, RAM) et tri du stock, dans le respect des normes ESD.</li>
+            <li><strong>Masterisation et déploiement de PC</strong>&nbsp;: installation de
+            l'image système standardisée du groupe à grande échelle, via MECM, Active Directory
+            et PowerShell.</li>
+            <li><strong>Gestion ITSM et administration du parc</strong>&nbsp;: assainissement
+            de la base de données Landesk (plus de 1000 fiches à fiabiliser sous Excel, dans le
+            respect du RGPD) et audit des salles de réunion du siège.</li>
+            <li><strong>Optimisation et création d'outils métiers</strong>&nbsp;: c'est ma
+            partie « innovation », où j'ai développé un portail web local pour centraliser les
+            ressources de l'équipe ainsi que l'amélioration de leur site de cartographie afin qu'il
+            soit plus simple à utiliser afin d'optimiser le temps de mes collègues.</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <h3>Ce que j'ai découvert du monde professionnel</h3>
+          <p>Ce que je retiens le plus, c'est l'<strong>aspect humain</strong> du métier. Que
+          ce soit pour réparer un PC, nettoyer une base de données ou créer mon portail web,
+          j'ai réalisé que, ce qui me plaisait le plus, c'était de dépanner les collaborateurs et
+          de leur rendre service. Pour moi, l'informatique est avant tout un outil pour aider
+          les autres.</p>
+          <p>J'ai aussi beaucoup appris par la pratique&nbsp;: un collègue m'expliquait et me démontrait 
+          comment réaliser les missions qui métaient confiées, puis je le refaisais juste après pour
+          valider ma compréhension de ces missions. J'ai surtout compris qu'en entreprise, une solution technique,
+          aussi performante soit-elle, n'a de valeur que si elle est <strong>maintenable</strong> et en accord avec
+          la stratégie de l'équipe. Enfin, la quantité de tâches répétitives que j'ai observée a confirmé mon envie
+          de me spécialiser dans l'<strong>IA</strong> afin d'automatiser ce qui fait perdre du temps aux employés.
+          Leur permettant d'optimiser leur temps et de passer beaucoup plus de temps sur des missions plus importantes.</p>
+        </article>
+
+        <div class="skills">
+          <article class="skill reveal">
+            <h3>Compétence n°1 — Administrer les systèmes informatiques et les réseaux</h3>
+            <p><strong>Outils &amp; expériences :</strong> J'ai maîtrisé le cycle de vie complet
+            d'un poste de travail, de la configuration BIOS (mode AHCI, désactivation du Secure
+            Boot) jusqu'à la remise en main propre. J'ai mobilisé MECM et l'Active Directory pour
+            garantir l'unicité des machines, et PowerShell (module PSWindowsUpdate, commande
+            <code>powercfg /batteryreport</code>) pour les mises à jour et le diagnostic.</p>
+            <p><strong>Angle critique :</strong> Certaines missions étaient très répétitives au
+            début, et face à une tête de vis cassée sur un châssis « Développeur », j'ai appris
+            qu'un vrai professionnalisme, c'est aussi savoir s'arrêter avant d'abîmer le matériel.</p>
+            <p><strong>Preuves :</strong> Obtention de mes propres accès administrateur, et un
+            engagement jusqu'à 19h pour finaliser des PC lors d'un pic de demandes (tickets).</p>
+          </article>
+
+          <article class="skill reveal">
+            <h3>Compétence n°2 — Réaliser un développement adapté à l'utilisateur</h3>
+            <p><strong>Outils &amp; expériences :</strong> J'ai conçu un <strong>portail web
+            local</strong> en HTML et CSS qui regroupe en trois catégories tous les sites utilisés
+            par l'équipe, et j'ai optimisé leur outil de cartographie des étages avec une liste
+            déroulante (au lieu de modifier l'URL à la main).</p>
+            <p><strong>Angle critique :</strong> En tant qu'étudiant, j'étais tenté d'utiliser des
+            méthodes plus complexes vues en cours. Mais mes propositions de scripts plus avancés
+            ont été écartées pour des raisons de maintenabilité et de dépendance au développeur.
+            J'ai donc volontairement privilégié la simplicité et un code bien documenté, afin que
+            l'équipe puisse faire vivre l'outil après mon départ.</p>
+            <p><strong>Preuves :</strong> Le portail a été présenté en réunion, puis validé et
+            adopté comme outil de travail quotidien par l'équipe.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== OBJECTIFS ===== -->
+    <section id="objectifs" class="section">
+      <div class="container">
+        <h2 class="section__title reveal">Mes Objectifs</h2>
+
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <span class="timeline__tag">Court terme</span>
+            <h3>Alternance en BUT3</h3>
+            <p>Trouver une alternance en BUT3 pour apprendre directement auprès
+            d'experts. Dès maintenant&nbsp;: consolider mon code et mes projets, soigner
+            ce portfolio et mon CV, et trouver des entreprises en cybersécurité ou en IA de préférence.</p>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__tag">Moyen terme</span>
+            <h3>École d'Ingénierie en IA ou bien l'École 2600</h3>
+            <p>Intégrer une école d'ingénierie en alternance spécialisée en IA 
+            ou l'<strong>école 2600</strong>, qui est une école immersive centrée sur
+            la cybersécurité. Ce qui me permettrais de monter en compétences technique tout en
+            mettant en pratique ces compétences sur le terrain avec des projets concrets en entreprise.</p>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__tag">Long terme</span>
+            <h3>Devenir Développeur IA</h3>
+            <p>Concevoir des solutions d'intelligence artificielle, idéalement à
+            l'intersection de l'IA et de la cybersécurité&nbsp;: par exemple un logiciel
+            capable de sécuriser les données des utilisateurs à l'aide de l'IA.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section section--alt">
+      <div class="container container--narrow">
+        <h2 class="section__title reveal">Me contacter</h2>
+        <p class="section__intro reveal">
+          Un projet, une question, une opportunité de stage ou d'alternance&nbsp;? Écrivez-moi.
+        </p>
+        <ul class="contact-list reveal">
+          <li><span>✉️</span> <a href="mailto:kadir.cassel06@gmail.com">kadir.cassel06@gmail.com</a></li>
+          <li><span>💼</span> <a href="#">https://www.linkedin.com/in/kadir-cassel/</a></li>
+          <li><span>🐙</span> <a href="#">https://www.github.com/Abdkdr-tr</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> - Portfolio BUT Informatique - IUT de Villetaneuse</p>
+    <p class="footer__quote">« Si je me bats au mieux à ma façon, et toi à la tienne, alors, nous gagnerons ce match. » - Haikyuu!!</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
